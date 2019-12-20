@@ -1,0 +1,72 @@
+URL:http://localhost:5000/billgenerator/api/bill
+
+METHOD : POST
+
+HEADER:
+	Content-Type:application/json
+
+REQUESTBODY:
+
+ {
+	"firstName":"Rahul",
+	"lastName":"Bhosale",
+	"email":"rahul@gmail.com",
+	"mobileNumber":"8600551038",
+	"productList":[
+		{
+		 "productId":"59a7fd4261a14de6ab25e33d6e829ef6",
+		 "quantity":2
+		},
+		{
+		 "productId":"2f1a5d6598e64905bec0fb288d07b471",
+		 "quantity":4
+		}
+	]
+}
+
+RESPONSEBODY:
+
+
+{
+    "id": "bf762f2fce43477db708a4a082c13fd5",
+    "invoiceNumber": "HZQ2BO8",
+    "firstName": "Rahul",
+    "lastName": "Bhosale",
+    "email": "rahul@gmail.com",
+    "mobileNumber": "8600551038",
+    "billDate": "18/12/2019",
+    "totalPrice": 2800.0,
+    "totalTax": 400.0,
+    "grandTotal": 3200.0,
+    "billDetailsDtoList": [
+        {
+            "id": "89c7cf9906b142a1baa940be8cf40868",
+            "billMasterId": "bf762f2fce43477db708a4a082c13fd5",
+            "productMasterId": "59a7fd4261a14de6ab25e33d6e829ef6",
+            "productName": "Product2",
+            "quantity": 2,
+            "perProductPrice": 400.0,
+            "price": 800.0,
+            "taxableAmount": 0.0,
+            "totalAmount": 800.0,
+            "categoryId": "606198521c65416e9d93e1684bab8496",
+            "category": "C",
+            "taxInPercent": 0.0
+        },
+        {
+            "id": "fdc783ad0fd94a3fa6d8d1abe5ace0f1",
+            "billMasterId": "bf762f2fce43477db708a4a082c13fd5",
+            "productMasterId": "2f1a5d6598e64905bec0fb288d07b471",
+            "productName": "Product1",
+            "quantity": 4,
+            "perProductPrice": 500.0,
+            "price": 2000.0,
+            "taxableAmount": 400.0,
+            "totalAmount": 2400.0,
+            "categoryId": "72e960f6ba2645c8b31ac66dc7ffcff8",
+            "category": "B",
+            "taxInPercent": 20.0
+        }
+    ]
+}
+
