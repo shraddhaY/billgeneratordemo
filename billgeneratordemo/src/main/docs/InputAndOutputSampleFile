@@ -8,9 +8,9 @@ HEADER:
 REQUESTBODY:
 
  {
-	"firstName":"Rahul",
-	"lastName":"Bhosale",
-	"email":"rahul@gmail.com",
+	"firstName":"xyz",
+	"lastName":"abc",
+	"email":"xyz@gmail.com",
 	"mobileNumber":"8600551038",
 	"productList":[
 		{
@@ -30,9 +30,9 @@ RESPONSEBODY:
 {
     "id": "bf762f2fce43477db708a4a082c13fd5",
     "invoiceNumber": "HZQ2BO8",
-    "firstName": "Rahul",
-    "lastName": "Bhosale",
-    "email": "rahul@gmail.com",
+    "firstName": "xyz",
+    "lastName": "abc",
+    "email": "xyz@gmail.com",
     "mobileNumber": "8600551038",
     "billDate": "18/12/2019",
     "totalPrice": 2800.0,
